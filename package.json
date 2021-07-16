@@ -10,8 +10,5 @@
     "eject": "react-scripts eject"
   },
   "author": "Hadi Torabi",
-  "license": "MIT",
-  "dependencies": {
-    "react-create-app": "^2.0.6"
-  }
+  "license": "MIT"
 }
