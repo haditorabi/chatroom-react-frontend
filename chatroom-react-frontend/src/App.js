@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoginPage from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 import DashboardPage from "./Pages/DashboardPage";
+import ChatroomPage from "./Pages/ChatroomPage";
 import IndexPage from "./Pages/IndexPage";
 import io from "socket.io-client";
 import Toaster from "./Toaster";
@@ -52,6 +53,11 @@ function App() {
           render={() => <DashboardPage socket={socket} />}
           exact
         />
+        <Route
+          path="/chatroom/:id"
+          render={() => <ChatroomPage socket={socket} />}
+          exact
+        />        
       </Switch>
     </BrowserRouter>
   );
